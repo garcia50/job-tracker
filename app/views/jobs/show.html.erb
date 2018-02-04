@@ -1,3 +1,4 @@
+<br>
 Title: <%= @job.title %>
 <br>
 
@@ -14,4 +15,5 @@ Company: <%= link_to @job.company.name, company_path(@job.company) %>
   
 <div class="company_<%= @job.company_id %>">
   <%= link_to "Delete", company_job_path(@job), method: "delete" %>
+  <%= link_to "Edit", edit_company_job_path(@job) %>
 </div>
