@@ -1,4 +1,7 @@
 <br>
+Category: <%= @job.category.title %>
+<br>
+
 Title: <%= @job.title %>
 <br>
 
@@ -12,8 +15,28 @@ City: <%= @job.city %>
 <br>
 
 Company: <%= link_to @job.company.name, company_path(@job.company) %>
-  
+
 <div class="company_<%= @job.company_id %>">
   <%= link_to "Delete", company_job_path(@job), method: "delete" %>
   <%= link_to "Edit", edit_company_job_path(@job) %>
 </div>
+<br>
+
+<%= form_for [@job, @comment] do |f| %>
+  
+  <%= f.text_field :content, placeholder: "Enter a comment"%>
+  <%= f.submit %>
+<% end %>
+
+<% @job.comments.each_with_index do |comment, i| %>
+  comment:
+  <br>
+  <%= comment.content %>
+  <br>
+  <br>
+<% end %>
+
+<br>  
+
+
+<%= link_to "View All #{@job.company.name} Jobs", company_jobs_path(@job.company) %>

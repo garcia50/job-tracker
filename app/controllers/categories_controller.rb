@@ -21,6 +21,7 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.find(params[:id])
+    
   end
 
   def edit
@@ -55,7 +56,3 @@ class CategoriesController < ApplicationController
   end
 
 end
-
-# <%= categories.each do |category| %>
-#       <p> category.title </p>
-#     <% end %>

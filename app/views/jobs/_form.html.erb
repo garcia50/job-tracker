@@ -1,31 +1,27 @@
 <head>
   <!-- <link rel="stylesheet" type="text/css" href="../../../reset.css"> -->
   <link rel="stylesheet" type="text/css" href="../../../main.css">
-  <title>Don't Enter : Shop Inside</title>
+  <title>JobTracker</title>
   <!-- <link href="/images/favicon.ico" rel="icon" type="image/x-icon" /> -->
   <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon"/>
-  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab" rel="stylesheet"/>
 </head>
-
 
 
 <%= form_for [@company, @job] do |f| %>
   <%= collection_select(:job, :category_id, Category.all, :id, :title) %>
 
-      <%= f.label :title %>
-      <%= f.text_field :title %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
 
-      <%= f.label :description %>
-      <%= f.text_field :description %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
 
-      <%= f.label :level_of_interest %>
-      <%= f.number_field :level_of_interest %>
+  <%= f.label :level_of_interest %>
+  <%= f.number_field :level_of_interest %>
 
-      <%= f.label :city %>
-      <%= f.text_field :city %>
+  <%= f.label :city %>
+  <%= f.text_field :city %>
 
-      <%= f.submit %>
-    
-
-
+  <%= f.submit %>
+  
 <% end %>
