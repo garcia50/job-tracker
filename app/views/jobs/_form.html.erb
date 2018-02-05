@@ -1,15 +1,87 @@
+<head>
+  <!-- <link rel="stylesheet" type="text/css" href="../../../reset.css"> -->
+  <link rel="stylesheet" type="text/css" href="../../../main.css">
+  <title>Don't Enter : Shop Inside</title>
+  <link href="/images/favicon.ico" rel="icon" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Josefin+Slab" rel="stylesheet">
+</head>
+
+<!-- <header class="top">
+  <figure class="banner">
+    <a href="/"><img src="../../../images/little_shop_rusty50.png"/></a>
+  </figure>
+</header> -->
+
+<!-- <nav class="nav">
+  <section class="dropdown">
+    <a href="/merchants"><button class="dropbutton">Merchants</button></a>
+    <div class="dropdown-content">
+      <a href="/merchants-dashboard">Merchants Dashboard</a>
+      <a href="/merchants/new">Create New Merchant</a>
+      <form action="/merchants?:params" method="GET">
+        <input class="find" type="text" name="name" placeholder="Find by Name...">
+      </form>
+    </div>
+  </section>
+</nav> -->
+
+
+
 <%= form_for [@company, @job] do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+  <div class="dropdown">
+    <span>Categories</span>
+    <div class="dropdown-content">
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+      <p>kjbhj</p>
+    </div>
+  </div>
+  
 
-  <%= f.label :description %>
-  <%= f.text_field :description %>
+      <%= f.label :title %>
+      <%= f.text_field :title %>
 
-  <%= f.label :level_of_interest %>
-  <%= f.number_field :level_of_interest %>
+      <%= f.label :description %>
+      <%= f.text_field :description %>
 
-  <%= f.label :city %>
-  <%= f.text_field :city %>
+      <%= f.label :level_of_interest %>
+      <%= f.number_field :level_of_interest %>
 
-  <%= f.submit %>
+      <%= f.label :city %>
+      <%= f.text_field :city %>
+
+      <%= f.submit %>
+    
+
+
 <% end %>
