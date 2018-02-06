@@ -15,7 +15,7 @@ class JobsController < ApplicationController
     @job.category_id = params[:job][:category_id]
     if @job.save
       flash[:success] = "You created #{@job.title} at #{@company.name}"
-      redirect_to company_job_path(@company, @job)
+      redirect_to job_path(@job)
     else
       render :new
     end
@@ -50,7 +50,6 @@ class JobsController < ApplicationController
     flash[:success] = "'#{job.title}' was successfully deleted!"
     redirect_to company_path(job.company_id)
   end
-
 
   private
 

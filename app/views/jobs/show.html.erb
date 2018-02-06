@@ -17,8 +17,8 @@ City: <%= @job.city %>
 Company: <%= link_to @job.company.name, company_path(@job.company) %>
 
 <div class="company_<%= @job.company_id %>">
-  <%= link_to "Delete", company_job_path(@job), method: "delete" %>
-  <%= link_to "Edit", edit_company_job_path(@job) %>
+  <%= link_to "Delete", job_path(@job), method: "delete" %>
+  <%= link_to "Edit", edit_job_path(@job) %>
 </div>
 <br>
 
@@ -33,7 +33,10 @@ Company: <%= link_to @job.company.name, company_path(@job.company) %>
 <h3>Comments:</h3>
 
 <% @job.comments.reverse.each_with_index do |comment, i| %>
-  <%= comment.content %><br><br>
+  <%= comment.content %><br>
+  created_at: <%= comment.created_at %><br>
+  updated_at: <%= comment.updated_at %><br><br>
+  <br><br>
 <% end %>
 
 
