@@ -3,6 +3,7 @@ require 'rails_helper'
 describe "User edits existing job" do
   scenario "a user edits a job" do
     company = Company.create!(name: "ESPN") 
+    category = Category.create!(title: "HR")
     job = Job.create!(
                       title: "Developer",
                       description: "So much fun!",
