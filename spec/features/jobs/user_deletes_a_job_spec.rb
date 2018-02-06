@@ -9,7 +9,8 @@ describe "User edits existing job" do
                       description: "So much food!",
                       level_of_interest: 20,
                       city: "Denver",
-                      company_id: company.id
+                      company_id: company.id,
+                      category_id: category.id
                       )
 
     visit "/companies/#{company.id}/jobs/#{job.id}"
