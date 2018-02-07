@@ -37,7 +37,7 @@ class JobsController < ApplicationController
     @company = @job.company_id
     if @job.save
       flash[:success] = "Job '#{@job.title}' Updated"
-      redirect_to company_job_path(@company, @job)
+      redirect_to job_path(@job)
     else
       render :edit
     end

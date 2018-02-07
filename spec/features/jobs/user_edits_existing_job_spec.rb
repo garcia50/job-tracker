@@ -13,9 +13,9 @@ describe "User edits existing job" do
                       category_id: category.id
                       ) 
 
-    visit "/companies/#{company.id}/jobs/#{job.id}/edit"
+    visit "/jobs/#{job.id}/edit"
 
-    expect(current_path).to eq(edit_company_job_path(company, job))
+    expect(current_path).to eq(edit_job_path(job))
     
     fill_in "job[title]", with: "CEO"
     fill_in "job[description]", with: "Your all beneath me!"
@@ -23,7 +23,7 @@ describe "User edits existing job" do
 
     click_button "Update"
 
-    expect(current_path).to eq(company_job_path(company, job))
+    expect(current_path).to eq(job_path(job))
     expect(page).to have_content("ESPN")
     expect(page).to have_content("CEO")
     expect(page).to have_content("Your all beneath me!")

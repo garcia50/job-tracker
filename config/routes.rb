@@ -1,11 +1,11 @@
 Rails.application.routes.draw do
 
-#create a seperate welcome#index for root
+  #create a seperate welcome#index for root
+  root to: 'welcome#index'
+  resources :welcome, only: [:index]
 
 
-#convert dashboard to analytics
-  root to: 'dashboard#index'
-
+  #convert dashboard to analytics
   resources :dashboard, only: [:index]
 
   resources :companies, shallow: true do
@@ -13,10 +13,6 @@ Rails.application.routes.draw do
       resources :comments, only: [:create]
     end
   end
-
-  # resources :jobs do
-  #     resources :comments
-  # end
 
   resources :categories 
   # The priority is based upon order of creation: first created -> highest priority.

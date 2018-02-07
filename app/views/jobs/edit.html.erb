@@ -1,6 +1,6 @@
 <h2>Edit a job at <%= @company.name %> here!</h2>
 
-<%= form_for [@company, @job] do |f| %>
+<%= form_for @job do |f| %>
   <%= f.label :title %>
   <%= f.text_field :title %>
 

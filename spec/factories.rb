@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :company do
-    name "ESPN"
+    name "Turing"
   end
 
   factory :job do
@@ -10,6 +10,17 @@ FactoryBot.define do
     city "Denver"
     company
     category
+  end
+
+  factory :category do
+    title "HR"
+  end
+
+  factory :comment do 
+    content "My name is Jeff"
+    # created_at "02-06-18"
+    # updated_at "02-07-18"
+    # job_id 1
   end
 
   # factory :admin, class: Director do 

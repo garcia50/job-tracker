@@ -10,7 +10,7 @@ describe "User sees a specific job" do
                                category_id: category.id
                                )
 
-    visit company_job_path(company, job)
+    visit job_path(job)
 
     expect(page).to have_content("ESPN")
     expect(page).to have_content("Developer")

@@ -13,7 +13,7 @@ describe "User edits existing job" do
                       category_id: category.id
                       )
 
-    visit "/companies/#{company.id}/jobs/#{job.id}"
+    visit "/jobs/#{job.id}"
 
     within(".company_#{company.id}") do
       click_link "Delete"

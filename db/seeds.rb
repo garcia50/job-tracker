@@ -1,10 +1,10 @@
 Company.destroy_all
 Job.destroy_all
 
-COMPANIES = ["ESPN", "Aetna", "United Airlines", "Denver Public Schools", "Shopify", "Starbucks", "Pivotal Labs", "Captain U", "Turing", "Gatorland"]
-JOBS = ["Engineering", "Development", "Dev Ops", "Quality Assurance", "Teacher", "Product Manager", "Consultant", "Community Manager", "Branch Manager", "Social Media Director"]
+COMPANIES = ["Pet Spa", "PETA", "Columbus Zoo", "Pet Walk", "CarPet Repair", "Goat Yoga", "Doggy Daycare", "Pets'R'Us", "Pet Savvy", "Dog Fit"]
+JOBS = ["Pet Hair Stylist", "Zoologist", "Zookeeper", "Pet Spa Manger", "Dog Whisper", "Goat Yoga Instructor", "Trainer", "Dog Purchase Consultant", "Pet Clothing Designer", "Dog Walker"]
 CITIES = ["Seattle", "Denver", "Portland", "Indianapolis", "Madison", "Orlando", "San Diego", "Austin", "Las Vegas", "Little Rock", "Boise", "Eugene", "Oakland"]
-CATEGORIES = ["Web Development", "Education", "Finance", "Engineering", "Management", "Accounting", "HR", "Maintenance", "Administration", "Marketing"]
+CATEGORIES = ["Animal Care", "Research Conservation", "Education", "Management", "Household Services", "Therapy", "Administration", "Engineering", "Marketing", "Finance"]
 
 COMPANIES.each_with_index do |name, i|
   company = Company.create!(name: name)
