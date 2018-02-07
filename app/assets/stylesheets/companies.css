@@ -18,10 +18,11 @@ body {
 
 h1 {
     color: blue;
+    font-size: 20px;
 }
 
-/*
-.dropdown {
+
+/*.dropdown {
     position: relative;
     display: inline-block;
 }
