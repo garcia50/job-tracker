@@ -21,8 +21,9 @@ describe Job do
 
     context "valid attributes" do
       it "is valid with a title, level of interest, and company" do
-        company = Company.new(name: "Turing")
-        job = Job.new(title: "Developer", level_of_interest: 40, city: "Denver", company: company)
+        Company.new(name: "Turing")
+        job = create(:job)
+
         expect(job).to be_valid
       end
     end
@@ -30,7 +31,8 @@ describe Job do
 
   describe "relationships" do
     it "belongs to a company" do
-      job = Job.new(title: "Software", level_of_interest: 70, description: "Wahooo")
+      job = create(:job)
+
       expect(job).to respond_to(:company)
     end
   end

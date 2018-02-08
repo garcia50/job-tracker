@@ -1,10 +1,20 @@
 Rails.application.routes.draw do
-  root to: 'dashboard#index'
 
+  # get '/companies/:company_id/jobs', to: "companies#show", as: "company_jobs"
+
+  #create a seperate welcome#index for root 
+  root to: 'welcome#index'
+  resources :welcome, only: [:index]
+
+
+  #convert dashboard to analytics
   resources :dashboard, only: [:index]
 
-  resources :companies do
-    resources :jobs
+  resources :companies, shallow: true do
+    resources :jobs do
+      resources :comments, only: [:create]
+      resources :contacts, only: [:create]
+    end
   end
 
   resources :categories 

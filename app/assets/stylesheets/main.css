@@ -1,0 +1,166 @@
+html, body {
+  height: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.welcome-hero {
+  background: url("doglogo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+  background-color: #19a0b3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav a {
+  text-decoration: none;
+  font-size: 30px;
+  color: white;
+  margin: 20px; 
+  text-shadow: 2px 2px grey;
+}
+
+.companies-index {
+  background: url("jt2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.companies-index h3, ul {
+  color: white;
+  padding-top: 0px;
+  padding-left: 190px;
+}
+
+.companies-index h1 {
+  padding-left: 105px;
+  font-size: 50px;
+  color: #EC7063;
+  margin: 0;
+  padding-top: 90px;
+  text-decoration: underline;
+}
+
+.companies-index a {
+ color: #EC7063;
+}
+
+.company-list a {
+  text-decoration: none;
+  color: #EC7063;
+}
+
+.company-back a {
+  padding-left: 190px;
+}
+
+.edit-form {
+  background: url("jt4.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.com-form {
+  padding-left: 40px;
+}
+
+.edith {
+  padding-top: 350px;
+  padding-left: 40px;
+}
+
+.com-new {
+  background: url("jt5.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.newc {
+  padding-top: 600px;
+  padding-left: 50px;
+}
+
+.com-show {
+  background: url("jt7.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
+  background-attachment: fixed;
+  padding-bottom: 0;
+  padding-top: 90px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+<h2>Da Category</h2>
+
+<%= @category.title %>
+<br>
+<br>
+<% @category.jobs.each do |job| %>
+  <li>
+    <%= job.title %>
+  </li>
+<% end %>  
+<br>
+<%= link_to "back", categories_path %>

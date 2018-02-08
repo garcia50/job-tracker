@@ -1,0 +1,11 @@
+<%= form_for @category do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, placeholder: "ex: Education" %>
+
+  <%= f.submit %>
+<% end %>
+
+<br>
+<br>
+
+<%= link_to "back", categories_path %>
