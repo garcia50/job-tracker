@@ -1,4 +1,4 @@
-class CompaniesController < ApplicationController
+  class CompaniesController < ApplicationController
   def index
     @companies = Company.all
   end
@@ -33,7 +33,7 @@ class CompaniesController < ApplicationController
       flash[:success] = "#{@company.name} updated!"
       redirect_to company_path(@company)
     else
-      flash[:error] = "Sorry we couldnot update company"
+      flash[:error] = "Sorry we could not update company"
       render :edit
     end
   end

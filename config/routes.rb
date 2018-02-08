@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  #create a seperate welcome#index for root
+  # get '/companies/:company_id/jobs', to: "companies#show", as: "company_jobs"
+
+  #create a seperate welcome#index for root 
   root to: 'welcome#index'
   resources :welcome, only: [:index]
 
