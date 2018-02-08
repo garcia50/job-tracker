@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   resources :companies, shallow: true do
     resources :jobs do
       resources :comments, only: [:create]
+      resources :contacts, only: [:create]
     end
   end
 

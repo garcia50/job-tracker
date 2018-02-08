@@ -116,7 +116,7 @@ body {
 }
 
 .com-show {
-  background: url("jt6.jpeg");
+  background: url("jt7.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -125,9 +125,11 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  margin-bottom: 0;
+  background-attachment: fixed;
+  padding-bottom: 0;
+  padding-top: 90px;
 }
-
-
 
 
 

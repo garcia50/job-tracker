@@ -2,6 +2,8 @@
   def index
     @company = Company.find(params[:company_id])
     @jobs = @company.jobs
+#     @contact = @jobs.contacts.new
+#     @contacts = @jobs.contacts
   end
 
   def new

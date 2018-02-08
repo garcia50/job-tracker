@@ -3,4 +3,5 @@ class Job < ApplicationRecord
   belongs_to :company
   belongs_to :category, optional: true
   has_many :comments
+  has_many :contacts
 end
